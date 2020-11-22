@@ -2,13 +2,11 @@
   "kind": "collectionType",
   "collectionName": "games",
   "info": {
-    "name": "game",
-    "description": ""
+    "name": "game"
   },
   "options": {
     "increments": true,
-    "timestamps": true,
-    "draftAndPublish": false
+    "timestamps": true
   },
   "attributes": {
     "name": {
@@ -44,6 +42,7 @@
         "FREE",
         "pegi3",
         "pegi7",
+        "pegi12",
         "pegi16",
         "pegi18"
       ]

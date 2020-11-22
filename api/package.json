@@ -1,18 +1,19 @@
 {
-  "name": "won-games",
+  "name": "api",
   "private": true,
   "version": "0.1.0",
-  "description": "Another e-commerce game shop",
+  "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "postinstall": "cd plugins/wysiwyg && yarn install"
   },
   "devDependencies": {},
   "dependencies": {
     "knex": "<0.20.0",
-    "pg": "latest",
+    "pg": "^8.5.1",
     "strapi": "3.2.5",
     "strapi-admin": "3.2.5",
     "strapi-connector-bookshelf": "3.2.5",
@@ -29,7 +30,7 @@
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "99acec32-d4ca-4ea1-a800-316acae2ce4c"
+    "uuid": "d5828e28-e5df-4086-a82a-0d6c415cd518"
   },
   "engines": {
     "node": ">=10.0.0",
