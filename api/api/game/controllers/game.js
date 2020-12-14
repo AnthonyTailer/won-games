@@ -5,4 +5,9 @@
  * to customize this controller
  */
 
-module.exports = {};
+module.exports = {
+  populate: async (ctx) => {
+    const cat = await strapi.services.game.populate()
+    console.log(cat)
+  }
+};

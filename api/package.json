@@ -12,6 +12,7 @@
   },
   "devDependencies": {},
   "dependencies": {
+    "jsdom": "^16.4.0",
     "knex": "<0.20.0",
     "pg": "^8.5.1",
     "strapi": "3.2.5",
