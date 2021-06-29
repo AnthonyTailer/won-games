@@ -13,7 +13,7 @@ export const parameters = {
       },
       {
         name: 'dark',
-        value: theme.colors.black
+        value: theme.colors.mainBg
       }
     ]
   }
@@ -22,7 +22,7 @@ export const parameters = {
 export const decorators = [
   (Story) => (
     <ThemeProvider theme={theme}>
-      <GlobalStyles />
+      <GlobalStyles removeBg />
       <Story />
     </ThemeProvider>
   )
