@@ -1,11 +1,10 @@
-import TextField from 'components/TextField'
-import { Email } from 'styled-icons/material-outlined'
+import FormSignIn from 'components/FormSignIn'
 import Auth from 'templates/Auth'
 
-export default function SignUp() {
+export default function SignIn() {
   return (
-    <Auth title="Sign Up">
-      <TextField name="email" icon={<Email />} />
+    <Auth title="Sign In">
+      <FormSignIn />
     </Auth>
   )
 }
