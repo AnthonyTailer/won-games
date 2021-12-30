@@ -1,4 +1,4 @@
-import { screen } from '@testing-library/react'
+import { screen, waitFor } from '@testing-library/react'
 import theme from 'styles/theme'
 import { renderWithTheme } from 'utils/tests/helpers'
 
@@ -9,6 +9,14 @@ describe('<Logo />', () => {
     renderWithTheme(<Logo />)
     expect(screen.getByLabelText(/Won Games/i).parentElement).toHaveStyle({
       color: `${theme.colors.white}`
+    })
+  })
+
+  it('should render the logo with id passed', async () => {
+    const { container } = renderWithTheme(<Logo id="myId" />)
+
+    await waitFor(() => {
+      expect(container.querySelector('#paint_linear_myId')).toBeInTheDocument()
     })
   })
 
