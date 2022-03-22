@@ -60,4 +60,16 @@ describe('<GameDetails />', () => {
 
     expect(screen.getByText('Role-playing / Narrative')).toBeInTheDocument()
   })
+
+  it('should render the developer', () => {
+    renderWithTheme(<GameDetails {...GameDetailsMock} />)
+
+    expect(screen.getByText(/Different Tales/i)).toBeInTheDocument()
+  })
+
+  it('should render the publisher', () => {
+    renderWithTheme(<GameDetails {...GameDetailsMock} />)
+
+    expect(screen.getByText(/Walkabout/i)).toBeInTheDocument()
+  })
 })
